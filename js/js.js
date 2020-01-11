@@ -1,6 +1,7 @@
 $(document).ready(function() {
     $('.slider').slick({
-        dots: true
+        dots: true,
+        arrows: true
     });
 });
 
@@ -39,7 +40,7 @@ $(window).scroll(function() {
                                 cc
                                 clearInterval(int);
                             }
-                            i++;
+                            i = i + 10;
                         }, step);
                 });
             }
