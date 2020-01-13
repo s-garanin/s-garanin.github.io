@@ -47,3 +47,19 @@ $(window).scroll(function() {
         }
     });
 });
+
+
+
+//Open popup
+$(".enter-popup").click(function() {
+    $(".popup").fadeIn();
+});
+
+
+//Close popup on click under window 
+$(document).mouseup(function(e) {
+    var popup = $(".popup");
+    if (e.target != popup[0] && popup.has(e.target).length === 0) {
+        $(".popup").fadeOut();
+    }
+});
